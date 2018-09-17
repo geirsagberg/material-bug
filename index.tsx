@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Hello from './Hello';
 
-export default (props) => <div>
+export default () => <div>
   <Hello />
 </div>
