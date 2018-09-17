@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import {createStyles, WithStyles} from '@material-ui/core'
+import {createStyles, WithStyles, withStyles} from '@material-ui/core'
 
 const styles = createStyles({
   root: {
@@ -10,4 +10,6 @@ const styles = createStyles({
 
 type Props = WithStyles<typeof styles>
 
-export default (props: Props) => <h1>Hello</h1>
+const Hello = ({classes}: Props) => <h1 className={classes.root}>Hello</h1>
+
+export default withStyles(styles)(Hello)
